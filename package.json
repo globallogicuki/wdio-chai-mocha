@@ -1,0 +1,22 @@
+{
+  "name": "automation_workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "chromedriver": "^2.36.0",
+    "wdio-chromedriver-service": "^0.1.2",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.4",
+    "webdriverio": "^4.12.0"
+  }
+}
