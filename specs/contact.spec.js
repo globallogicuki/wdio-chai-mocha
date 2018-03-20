@@ -6,7 +6,7 @@ describe('ECS Digital contact page', () => {
     });
 
     it.only('should show error message when required fields are not filled in', () => {
-        ContactPage.firstNameField.setValue('Marie');
+        //ContactPage.firstNameField.setValue('Marie');
         ContactPage.submitBtn.click();
         ContactPage.errorMsgs.waitForVisible();
         expect(ContactPage.errorMsgs.isVisible()).to.be.true;

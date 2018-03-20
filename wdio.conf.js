@@ -20,6 +20,7 @@ exports.config = {
     screenshotPath: './errorShots/',
     baseUrl: 'https://www.ecs-digital.co.uk/',
     waitforTimeout: 10000,
+    deprecationWarnings: false,
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
