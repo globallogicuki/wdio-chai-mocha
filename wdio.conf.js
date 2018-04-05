@@ -6,13 +6,13 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
-    
+
     maxInstances: 10,
     capabilities: [{
         maxInstances: 5,
         browserName: 'chrome'
     }],
-   
+
     sync: true,
     logLevel: 'silent',
     coloredLogs: true,
@@ -29,7 +29,7 @@ exports.config = {
     // Default request retries count
     connectionRetryCount: 3,
     services: ['selenium-standalone', 'chromedriver'],
-    
+
     framework: 'mocha',
     reporters: ['spec'],
     mochaOpts: {
@@ -40,5 +40,5 @@ exports.config = {
 
     before: function () {
         global.expect = require('chai').expect;
-    }      
+    }
 }
