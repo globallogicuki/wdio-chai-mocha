@@ -1,6 +1,6 @@
 import HomePage from '../page-objects/home.page';
 
-describe('ECS Digital homepage', () => {
+describe('QAWorks homepage', () => {
 
     before('Navigate to home page', () => {
         browser.url('/');
@@ -10,15 +10,10 @@ describe('ECS Digital homepage', () => {
         expect(HomePage.logo.isVisible()).to.be.true;
         expect(HomePage.mainMenu.isVisible()).to.be.true;
     });
-    
-    it('should navigate to what we do page', () => {
-        HomePage.whatWedo.click();
-        expect(browser.getUrl()).to.equal('https://www.ecs-digital.co.uk/what-we-do');
+
+    it('should navigate to services page', () => {
+        HomePage.services.click();
+        expect(browser.getUrl()).to.equal('http://www.qaworks.com/about-us/#_ourservices');
     });
-    
-    it('should navigate to application monitoring page', () => {
-        HomePage.whatWedo.moveToObject();
-        HomePage.appMonitoring.click();
-        expect(browser.getUrl()).to.equal('https://www.ecs-digital.co.uk/what-we-do/application-monitoring');
-    });
-});       
+
+});

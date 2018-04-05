@@ -18,7 +18,7 @@ exports.config = {
     coloredLogs: true,
     bail: 0,
     screenshotPath: './errorShots/',
-    baseUrl: 'https://www.ecs-digital.co.uk/',
+    baseUrl: 'http://www.qaworks.com/',
     waitforTimeout: 10000,
     deprecationWarnings: false,
     //
