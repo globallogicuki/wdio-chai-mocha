@@ -1,7 +1,8 @@
 class ContactPage {
-    get errorMsgs () { return $('ul.hs-error-msgs'); }
-    get submitBtn () { return $('div#hs_form_target_module_1488371706384506 input.hs-button'); }
-    get firstNameField () { return $('input#firstname-cac6afc5-5a87-4cf0-bd0d-e1bb8b7543c8_9655'); }
+    get errorMsgs () { return $('.wpcf7-not-valid-tip'); }
+    get sendBtn () { return $('#contact-us-send'); }
+    get nameField () { return '.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required'; }
+
 }
 
 export default new ContactPage();
