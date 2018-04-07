@@ -16,4 +16,9 @@ describe('QAWorks homepage', () => {
         expect(browser.getUrl()).to.equal('http://www.qaworks.com/about-us/#_ourservices');
     });
 
+    it('should navigate to aboutUs page', () => {
+        HomePage.aboutUs.click();
+        expect(browser.getUrl()).to.equal('http://www.qaworks.com/about-us/');
+    })
+
 });
